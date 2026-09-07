@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahad Khalid | Software Engineering Student</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- My own CSS file -->
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ===================== FLOATING CODE SYMBOLS BACKGROUND ===================== -->
+  <!-- JavaScript will fill this box with floating "</>", "{ }", ";" etc. symbols -->
+  <div id="code-bg"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Fahad<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <!-- Dark / Light mode button -->
+        <button id="themeToggle" class="theme-toggle" title="Toggle dark / light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Hamburger menu for mobile -->
+        <button id="menuBtn" class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HOME / HERO SECTION ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greet">Hello, I am</p>
+      <h1 class="hero-name">Fahad Khalid</h1>
+      <h2 class="hero-role">Software Engineering Student &amp; Web Developer</h2>
+
+      <!-- ACHIEVEMENTS LINE: shows one line at a time, types it out,
+           then erases it and shows the next one (typewriter effect) -->
+      <p class="hero-achieve">
+        <i class="fa-solid fa-trophy"></i>
+        <span id="typedText"></span><span class="cursor">|</span>
+      </p>
+
+      <p class="hero-text">
+        I build clean, responsive websites with HTML, CSS and JavaScript.
+        Currently studying Software Engineering at SMIU and learning how to
+        turn ideas into simple, working web experiences.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/cv/FAHAD_KHALID_CV.pdf" download="Fahad_Khalid_CV.pdf" class="btn btn-outline">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <!-- Quick social icons -->
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/fahad-khalid-077750361/" target="_blank" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:fahadkhalidd36@gmail.com" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-image-blob">
+        <img src="./images/WhatsApp Image 2026-09-05 at 8.59.09 AM.jpeg" alt="Fahad Khalid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+  <section id="achievements" class="section achievements">
+    <div class="achieve-heading">
+      <span class="achieve-eyebrow">By The Numbers</span>
+      <h2 class="achieve-title">Achievements <span>So Far</span></h2>
+    </div>
+
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <h3>2+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="achieve-card">
+        <h3>15+</h3>
+        <p>Skills Learned</p>
+      </div>
+      <div class="achieve-card">
+        <h3>2</h3>
+        <p>Certificates Earned</p>
+      </div>
+      <div class="achieve-card">
+        <h3>1+</h3>
+        <p>Year of Work Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-line"></p>
+
+    <div class="about-wrapper">
+
+      <div class="about-image">
+        <div class="about-image-frame">
+          <img src="./images/smiu-pic01.jpg" alt="SMIU">
+        </div>
+        <div class="about-badge">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>5th Semester<br>Software Engineering</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p>
+          I am a Software Engineering student at Sindh Madressatul Islam University
+          (SMIU), currently in my 5th semester. Alongside my studies, I completed the
+          "Web Development with AI" course at Bano Qabil and a certified course in
+          HTML, CSS and JavaScript for Web Developers at 10Pearls University.
+        </p>
+        <p>
+          Before moving fully into web development, I worked for a year as a Call
+          Center Agent, where I learned how to communicate clearly, solve problems
+          quickly and stay professional under pressure — skills that now help me
+          understand what users actually need from the products I build.
+        </p>
+        <p>
+          I enjoy turning a simple idea into a working website: I like the process
+          of building something in HTML and CSS, wiring it up with JavaScript, and
+          watching it come alive in the browser.
+        </p>
+
+        <blockquote class="about-quote">
+          "I don't just want to write code — I want to build things people
+          actually enjoy using."
+        </blockquote>
+
+        <div class="about-facts">
+          <div class="fact-item"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</div>
+          <div class="fact-item"><i class="fa-solid fa-briefcase"></i> Open to Internships</div>
+          <div class="fact-item"><i class="fa-solid fa-code"></i> Loves Clean Code</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-line"></p>
+
+    <h3 class="skills-subtitle">Technical Skills</h3>
+    <p class="skills-hint"><i class="fa-solid fa-hand-pointer"></i> Tap or hover a card to see more</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Structuring clean, semantic web pages.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Styling responsive, modern layouts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Adding interactivity and logic to sites.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Tracking changes and managing versions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Hosting and sharing code online.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Writing scripts and learning programming logic.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-solid fa-robot"></i>
+            <span>AI Tools</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Using AI to learn and build faster.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-solid fa-file-word"></i>
+            <span>MS Word</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Creating clean, professional documents.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-solid fa-file-excel"></i>
+            <span>MS Excel</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Organizing and analyzing data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card" tabindex="0">
+        <div class="skill-card-inner">
+          <div class="skill-face skill-front">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <span>PowerPoint</span>
+          </div>
+          <div class="skill-face skill-back">
+            <p>Designing clear, engaging presentations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+
+    <h3 class="skills-subtitle">Soft Skills</h3>
+    <br>
+    <div class="chip-group">
+      <span class="chip">Communication</span>
+      <span class="chip">Problem Solving</span>
+      <span class="chip">Time Management</span>
+      <span class="chip">Customer Dealing</span>
+      <span class="chip">Team Collaboration</span>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="section projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-line"></p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 : Mid-Term Exam Project -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/Screenshot 2026-09-02 110913.png" alt="Coza Store mid-term project screenshot">
+        </div>
+        <div class="project-body">
+          <h3>Coza Store — Mid-Term Exam Project</h3>
+          <p>
+            An online store front-end built for my mid-term exam using HTML, CSS
+            and JavaScript. It has a product grid, a responsive layout and simple
+            interactive elements like buttons and hover effects.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://cozastore-clone20.netlify.app/" target="_blank" class="btn btn-small">
+            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 : To-Do Application -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./images/Screenshot 2026-09-02 110803.png" alt="To-Do application project screenshot">
+        </div>
+        <div class="project-body">
+          <h3>To-Do Application</h3>
+          <p>
+            A simple, beginner-friendly to-do list app where a user can add tasks,
+            mark them as complete and delete them. Built with plain JavaScript
+            to practice DOM manipulation and event handling.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://todo-application22.netlify.app/" target="_blank" class="btn btn-small">
+            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION / EXPERIENCE SECTION ===================== -->
+  <section id="education" class="section education">
+    <h2 class="section-title">Education &amp; Experience</h2>
+    <p class="section-line"></p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 — Continued</span>
+          <h3>BS Software Engineering</h3>
+          <p>Sindh Madressatul Islam University (SMIU) — Currently in 5th Semester</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2021 — 2023</span>
+          <h3>Intermediate — Pre-Engineering</h3>
+          <p>Government D.J. Science College, Karachi</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 — 2021</span>
+          <h3>Matriculation — Computer Science</h3>
+          <p>GreenLand Grammar School</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">1 Year</span>
+          <h3>Call Center Agent</h3>
+          <p>Customer Support Center — Handled inbound/outbound calls, resolved
+            customer issues and maintained accurate records while consistently
+            meeting performance targets.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES SECTION ===================== -->
+  <section id="certificates" class="section certificates">
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-line"></p>
+
+    <div class="cert-grid">
+
+      <a class="cert-card" href="https://10pearlsuniversity.org/view-certificate?cid=10PUC-02e5e95914e0ecd377f3093a26006d4ceaf7f1d91014ef38514267131" target="_blank">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>HTML, CSS &amp; JavaScript for Web Developers</h3>
+        <p>10Pearls University</p>
+        <span class="cert-id">Certificate No. IM58132-FNQgs5kL</span>
+        <span class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+      <a class="cert-card" href="https://10pearlsuniversity.org/view-certificate?cid=10PUC-d0268426082d58f7a099bd6a60f90a130521c41ee56c7cf0514264131" target="_blank">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Web Development with AI</h3>
+        <p>Bano Qabil</p>
+        <span class="cert-id">Certificate No. DV53986-ywTkMgD0</span>
+        <span class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-line"></p>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-info">
+        <p>Have an idea, a job opportunity, or just want to say hello? Reach out
+          through any of the options below — I would love to hear from you.</p>
+
+        <a href="mailto:fahadkhalidd36@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i> fahadkhalidd36@gmail.com
+        </a>
+        <a href="https://wa.me/923242076454" target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i> +92 324 2076454
+        </a>
+        <a href="https://www.linkedin.com/in/fahad-khalid-077750361/" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i> linkedin.com/in/fahad-khalid
+        </a>
+        <a href="#" class="contact-item">
+          <i class="fa-solid fa-location-dot"></i> Malir 15, Karachi
+        </a>
+      </div>
+
+      <!-- Simple contact form - opens the user's email app with the message pre-filled -->
+      <form class="contact-form" id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="formNote" class="form-note"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Fahad Khalid<span>.</span></h3>
+        <p>Software Engineering Student &amp; Web Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/fahad-khalid-077750361/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/923242076454" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:fahadkhalidd36@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="assets/cv/FAHAD_KHALID_CV.pdf" download="Fahad_Khalid_CV.pdf" title="Download CV"><i class="fa-solid fa-download"></i></a>
+      </div>
+    </div>
+
+    <!-- Small quick-message box, as requested, right inside the footer -->
+    <div class="footer-message">
+      <p>Quick message?</p>
+      <form id="footerForm" class="footer-form">
+        <input type="email" id="footerEmail" placeholder="Your email" required>
+        <input type="text" id="footerMsg" placeholder="Type a short message..." required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+      <p id="footerFormNote" class="form-note"></p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Fahad Khalid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
+  <a href="https://wa.me/923242076454" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ===================== ASK AI WIDGET ===================== -->
+  <!-- A simple keyword-based assistant that answers common questions
+       about Fahad. It is NOT connected to a real AI model - it just
+       matches keywords from the visitor's question to a ready answer. -->
+  <button id="askAiBtn" class="ask-ai-btn" title="Ask AI about Fahad">
+    <i class="fa-solid fa-robot"></i> <span>Ask AI</span>
+  </button>
+
+  <div id="askAiPanel" class="ask-ai-panel">
+    <div class="ask-ai-header">
+      <span><i class="fa-solid fa-robot"></i> Ask about Fahad</span>
+      <button id="askAiClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div id="askAiMessages" class="ask-ai-messages">
+      <div class="ai-msg bot">
+        Hi! I can answer quick questions about Fahad's skills, projects,
+        education or contact info. Try asking something like
+        "What are your skills?"
+      </div>
+    </div>
+
+    <form id="askAiForm" class="ask-ai-form">
+      <input type="text" id="askAiInput" placeholder="Ask a question..." autocomplete="off" required>
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- back to top button -->
+  <button id="backToTop" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
